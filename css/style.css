@@ -23,6 +23,10 @@ h1 {
 /*1. Centera boxen */
 section#part-blue {
   background-color:rgba(0, 162, 255,1);
+  display:flex;
+  justify-content: center;
+  
+  
   
 }
 
@@ -30,18 +34,23 @@ section#part-blue {
   width:100px;
   height:100px;
   background-color: royalblue;
+  align-self:center;
   }
 
 /*2. Sprid ut länkarna jämnt horisontellt*/
 
 section#part-orange {
   background-color:rgba(250, 182, 71, 1);
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /* 3. Stapla boxarna vertikalt */
 section#part-pink {
   background-color: pink;
-  display:flex
+  display:flex;
+  flex-direction: column;
 }
 
 section#part-pink .column-box {
@@ -56,6 +65,8 @@ section#part-pink .column-box {
 section#part-green {
   background-color: rgba(150, 255, 118,1);
   display:flex;
+  align-content: flex-start;
+  flex-wrap:wrap;
   
 }
 
@@ -73,11 +84,14 @@ section#part-brown {
   display:flex;
   align-items:center;
   justify-content:center;  
+
 }
 
 section#part-brown article {
   height:100px;
   width:100px;
+  
+
 }
 
 #part-brown article:nth-child(1) {
